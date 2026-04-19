@@ -10,5 +10,6 @@ export default defineConfig({
     babel({ presets: [reactCompilerPreset()] }),
     tailwindcss()
   ],
-  base: "https://javidev04.github.io/rawaifu/",
+  // Debe coincidir con el nombre del repo en GitHub Pages: https://usuario.github.io/<repo>/
+  base: '/rawaifu/',
 })
