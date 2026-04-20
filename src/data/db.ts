@@ -114,69 +114,69 @@ export const db = [
       score: 1000
   },
   {
-    id: 20,
-    name: 'Roxy',
-    image: 'Mushoku_tensei/Roxy',
-    score: 1000
+      id: 20,
+      name: 'Roxy',
+      image: 'Mushoku_tensei/Roxy',
+      score: 1000
   },
   {
-    id: 21,
-    name: 'Sylphy',
-    image: 'Mushoku_tensei/Sylphy',
-    score: 1000
+      id: 21,
+      name: 'Sylphy',
+      image: 'Mushoku_tensei/Sylphy',
+      score: 1000
   },
   {
-    id: 22,
-    name: 'Eris',
-    image: 'Mushoku_tensei/Eris',
-    score: 1000
+      id: 22,
+      name: 'Eris',
+      image: 'Mushoku_tensei/Eris',
+      score: 1000
   },
   {
-    id: 23,
-    name: 'Hitori Gotou',
-    image: 'Bocchi_the_rock/Hitori_goto',
-    score: 1000
+      id: 23,
+      name: 'Hitori Gotou',
+      image: 'Bocchi_the_rock/Hitori_goto',
+      score: 1000
   },
   {
-    id: 24,
-    name: 'Ryo Yamada',
-    image: 'Bocchi_the_rock/Ryo_yamada',
-    score: 1000
+      id: 24,
+      name: 'Ryo Yamada',
+      image: 'Bocchi_the_rock/Ryo_yamada',
+      score: 1000
   },
   {
-    id: 25,
-    name: 'Nijika Ijichi',
-    image: 'Bocchi_the_rock/Nijika_ijichi',
-    score: 1000
+      id: 25,
+      name: 'Nijika Ijichi',
+      image: 'Bocchi_the_rock/Nijika_ijichi',
+      score: 1000
   },
   {
-    id: 26,
-    name: 'Kita Ikujo',
-    image: 'Bocchi_the_rock/Kita_ikujo',
-    score: 1000
+      id: 26,
+      name: 'Kita Ikujo',
+      image: 'Bocchi_the_rock/Kita_ikujo',
+      score: 1000
   },
   {
-    id: 27,
-    name: 'Suzune Horikita',
-    image: 'COTE/Suzune_horikita',
-    score: 1000
+      id: 27,
+      name: 'Suzune Horikita',
+      image: 'COTE/Suzune_horikita',
+      score: 1000
   },
   {
-    id: 28,
-    name: 'Kei Karuizawa',
-    image: 'COTE/Kei_karuizawa',
-    score: 1000
+      id: 28,
+      name: 'Kei Karuizawa',
+      image: 'COTE/Kei_karuizawa',
+      score: 1000
   },
   {
-    id: 29,
-    name: 'Honami Ichinose',
-    image: 'COTE/Honami_ichinose',
-    score: 1000
+      id: 29,
+      name: 'Honami Ichinose',
+      image: 'COTE/Honami_ichinose',
+      score: 1000
   },
   {
-    id: 30,
-    name: 'Arisu Sakayanagi',
-    image: 'COTE/Arisu_sakayanagi',
-    score: 1000
+      id: 30,
+      name: 'Arisu Sakayanagi',
+      image: 'COTE/Arisu_sakayanagi',
+      score: 1000
   }
 ]
