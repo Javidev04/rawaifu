@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import Card from "./components/Card"
 import Contacts from "./components/Contacts"
 import Ranking from "./components/Ranking"
@@ -35,7 +36,7 @@ function App() {
         </div>
         <Ranking data={data} />
       </div>
-
+      <Analytics />
     </> 
   )
 }
