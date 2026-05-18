@@ -5,12 +5,20 @@ type Entry = (typeof db)[number]
 
 type RankingProps = {
   data: Entry[]
+  currentPage: number
+  entriesPerPage: number
 }
 
-export default function Ranking({ data }: RankingProps) {
+export default function Ranking({ data, currentPage, entriesPerPage }: RankingProps) {
   const sorted = useMemo(
-    () => [...data].sort((a, b) => b.score - a.score),
-    [data]
+    () => {
+        const newData = [...data].sort((a, b) => b.score - a.score)
+        const firstIndex = (currentPage - 1) * entriesPerPage
+        const lastIndex = currentPage * entriesPerPage
+        const dataCurrentPage = newData.slice(firstIndex, lastIndex)
+        return dataCurrentPage
+    },
+    [data, currentPage, entriesPerPage]
   )
 
   return (
@@ -20,7 +28,7 @@ export default function Ranking({ data }: RankingProps) {
       </h2>
       <div className="overflow-hidden rounded-lg sm:rounded-xl border border-zinc-700/80 bg-zinc-900/60 shadow-xl shadow-black/40 backdrop-blur-sm">
         <div className="overflow-x-auto -mx-px sm:mx-0">
-          <table className="w-full min-w-[280px] text-left text-xs sm:text-sm">
+          <table className="w-full min-w-70 text-left text-xs sm:text-sm">
             <thead>
               <tr className="border-b border-orange-500/35 bg-linear-to-r from-zinc-800/90 to-zinc-800/70">
                 <th
@@ -42,6 +50,7 @@ export default function Ranking({ data }: RankingProps) {
             </thead>
             <tbody className="divide-y divide-zinc-700/60">
               {sorted.map((entry, i) => (
+                i = (currentPage - 1) * entriesPerPage + i,
                 <tr
                   key={entry.id}
                   className="transition-colors hover:bg-zinc-800/50 even:bg-zinc-950/30"
